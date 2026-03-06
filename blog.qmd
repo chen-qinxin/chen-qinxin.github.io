@@ -1,0 +1,8 @@
+---
+title: "文章与笔记"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+---

@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "陈沁鑫",
+    "section": "",
+    "text": "2005年生，目前四川大学在读，没什么文化。"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html#学术与研究",
+    "href": "index.html#学术与研究",
+    "title": "Chen Qinxin",
+    "section": "",
+    "text": "我对宏观经济学和计量经济学充满热情。目前重点关注和学习的方向包括： * 宏观经济中的迟滞效应分析 * VAR 模型与 DSGE 模型的应用与实践 * 数据处理与学术复现"
+  },
+  {
+    "objectID": "index.html#爱好与日常",
+    "href": "index.html#爱好与日常",
+    "title": "Chen Qinxin",
+    "section": "☕ 爱好与日常",
+    "text": "☕ 爱好与日常\n在和代码、论文打交道之余，我也喜欢一些安静的爱好来放松自己： * 练练书法（目前是 A7 活页本的忠实用户） * 收集和使用钢笔，享受墨水落在纸上的纯粹感 * 照顾书桌上的好养活的小植物 * 用 Kindle 沉浸阅读\n欢迎浏览我的网站，如果有共同的兴趣，随时交流！"
+  },
+  {
+    "objectID": "index.html#爱好",
+    "href": "index.html#爱好",
+    "title": "陈沁鑫",
+    "section": "☕ 爱好",
+    "text": "☕ 爱好\n拥有许多三分钟热度\n\n喜欢写字并写的一手丑字\n爱买钢笔，还不爱用\n健身但是有点懒得出校门\n喜欢睡觉和吃饭\n\n欢迎浏览我的网站，如果有共同的兴趣，随时交流！"
+  },
+  {
+    "objectID": "index.html#学术",
+    "href": "index.html#学术",
+    "title": "陈沁鑫",
+    "section": "🔬 学术",
+    "text": "🔬 学术\n\n本科专业为财政学，但同床异梦\n对税制已PTSD\n目前正对宏观经济学抓耳挠腮"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "文章与笔记",
+    "section": "",
+    "text": "我的第一篇测试文章：开启建站之旅\n\n\n\n随笔\n\n宏观经济学\n\n\n\n\n\n\n\n\n\nMar 6, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/tests/index.html",
+    "href": "posts/tests/index.html",
+    "title": "我的第一篇测试文章：开启建站之旅",
+    "section": "",
+    "text": "你好，世界！这是我在自己网站上发布的第一篇文章。"
+  },
+  {
+    "objectID": "posts/tests/index.html#为什么建这个网站",
+    "href": "posts/tests/index.html#为什么建这个网站",
+    "title": "我的第一篇测试文章：开启建站之旅",
+    "section": "1. 为什么建这个网站？",
+    "text": "1. 为什么建这个网站？\n为了好玩，也为了记录我的学习日常和一些微小的爱好。这里以后会成为我的数字自留地。"
+  },
+  {
+    "objectID": "posts/tests/index.html#测试一下排版和公式",
+    "href": "posts/tests/index.html#测试一下排版和公式",
+    "title": "我的第一篇测试文章：开启建站之旅",
+    "section": "2. 测试一下排版和公式",
+    "text": "2. 测试一下排版和公式\n既然搭建好了框架，必须得测试一下我对学术内容的支持程度。在讨论宏观经济学时，我们经常会关注迟滞效应对经济的长期影响。\n这里测试一个简单的自回归模型 (AR) 公式渲染：\n\\[\nY_t = c + \\phi Y_{t-1} + \\varepsilon_t\n\\]\n完美！不管是文字排版还是数学公式，都显示得非常清晰。"
+  }
+]
