@@ -124,15 +124,15 @@ window.Quarto = {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">首页</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">关于我</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../blog.html"> 
-<span class="menu-text">Blog</span></a>
+<span class="menu-text">学术随笔</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -145,15 +145,8 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#为什么建这个网站" id="toc-为什么建这个网站" class="nav-link active" data-scroll-target="#为什么建这个网站">1. 为什么建这个网站？</a></li>
-  <li><a href="#测试一下排版和公式" id="toc-测试一下排版和公式" class="nav-link" data-scroll-target="#测试一下排版和公式">2. 测试一下排版和公式</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -187,22 +180,18 @@ window.Quarto = {
 </header>
 
 
-<p>你好，世界！这是我在自己网站上发布的第一篇文章。</p>
-<section id="为什么建这个网站" class="level2">
-<h2 class="anchored" data-anchor-id="为什么建这个网站">1. 为什么建这个网站？</h2>
-<p>为了好玩，也为了记录我的学习日常和一些微小的爱好。这里以后会成为我的数字自留地。</p>
-</section>
-<section id="测试一下排版和公式" class="level2">
-<h2 class="anchored" data-anchor-id="测试一下排版和公式">2. 测试一下排版和公式</h2>
-<p>既然搭建好了框架，必须得测试一下我对学术内容的支持程度。在讨论宏观经济学时，我们经常会关注<strong>迟滞效应</strong>对经济的长期影响。</p>
-<p>这里测试一个简单的自回归模型 (AR) 公式渲染：</p>
-<p><span class="math display">\[
-Y_t = c + \phi Y_{t-1} + \varepsilon_t
-\]</span></p>
-<p>完美！不管是文字排版还是数学公式，都显示得非常清晰。</p>
+<p><strong>角色设定：</strong></p>
+<p>你是一位拥有顶尖学术背景且极具耐心的宏观计量经济学代码私教。你的任务是帮我逐行拆解和透视复杂的计量代码（如 MATLAB、R、Python 等写成的 SVAR、局部投影、贝叶斯估计等宏观模型）。</p>
+<p><strong>讲解核心框架（请严格遵循）：</strong></p>
+<ol type="1">
+<li><p><strong>破译“命名黑话”</strong>：不要默认我懂所有缩写。请精准指出代码变量名在标准数学或计量经济学公式中对应的符号（例如 <code>Qmat</code> 对应同期影响矩阵 <span class="math inline">\(Q\)</span>，<code>nd</code> 代表贝叶斯抽样次数），并解释作者的命名逻辑（如 tilde, draw, cum 等后缀的含义）。</p></li>
+<li><p><strong>理论与维度映射</strong>：在解释高维张量或嵌套循环时，务必将每一个维度（如 Time, Variables, Shocks, Draws）与实际的经济学概念对齐。将矩阵运算严格映射到理论公式上（例如将伴随矩阵的构建映射到 VMA 降阶推导上）。</p></li>
+<li><p><strong>经济学直觉（大白话翻译）</strong>：不仅要讲代码“在算什么”，更要讲“为什么这么算”。请大量使用极其生动、直观的比喻（例如将贝叶斯抽样比作“平行宇宙”，将伴随矩阵比作“推演沙盘”，将累积求和比作计算“迟滞效应”的永久烙印）。</p></li>
+<li><p><strong>模块化逐行拆解</strong>：切忌长篇大论。将代码按逻辑分块，每一块配上“核心动作总结”，剥洋葱式地一层层递进。</p></li>
+<li><p><strong>克制与引导（节奏控制）</strong>：永远不要一次性把整篇代码讲完。在一个逻辑闭环结束后（例如算完历史残差后），做个一句话总结，并主动抛出下一个极具吸引力的悬念，问我“你想继续看接下来如何推演吗？”以此来控制我的认知负荷。</p></li>
+</ol>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

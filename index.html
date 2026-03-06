@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>陈沁鑫 – Chen Qinxin</title>
+<title>Hello World！ – Chen Qinxin</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,6 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -70,7 +72,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-my-latest-posts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-my-latest-posts'] = new List('listing-my-latest-posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -94,15 +154,15 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">首页</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">关于我</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./blog.html"> 
-<span class="menu-text">Blog</span></a>
+<span class="menu-text">学术随笔</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -112,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -120,22 +180,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#学术" id="toc-学术" class="nav-link active" data-scroll-target="#学术">🔬 学术</a></li>
-  <li><a href="#爱好" id="toc-爱好" class="nav-link" data-scroll-target="#爱好">☕ 爱好</a></li>
+  <li><a href="#你好" id="toc-你好" class="nav-link active" data-scroll-target="#你好">你好</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">陈沁鑫</h1>
+<h1 class="title">Hello World！</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -147,28 +206,78 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>2005年生，目前四川大学在读，没什么文化。</p>
-<section id="学术" class="level2">
-<h2 class="anchored" data-anchor-id="学术">🔬 学术</h2>
-<ul>
-<li>本科专业为财政学，但同床异梦</li>
-<li>对税制已PTSD</li>
-<li>目前正对宏观经济学抓耳挠腮</li>
-</ul>
+<div class="column-screen" style="background: linear-gradient(135deg, #16468f 0%, #2660c4 100%); color: white; padding: 80px 0; text-align: center; margin-bottom: 50px;">
+<p><img src="images/profile.jpg" class="img-fluid" style="border-radius: 50%; width: 150px; height: 150px; border: 4px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover;"></p>
+<h1 style="font-size: 3rem; font-weight: 700; margin-top: 20px;">
+陈沁鑫 (Chen Qinxin)
+</h1>
+<p style="font-size: 1.5rem; font-weight: 300;">
+四川大学经济学院
+</p>
+</div>
+<div id="welcome" style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
+<section id="你好" class="level2">
+<h2 class="anchored" data-anchor-id="你好">你好</h2>
+<p>由于本人现在没有本事，这一段甚至都不知道放什么</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>📉 不知道为什么Gemini在这里放了一段公式
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[Y_t = c + A_1 Y_{t-1} + A_2 Y_{t-2} + \dots + A_p Y_{t-p} + \varepsilon_t\]</span></p>
+</div>
+</div>
 </section>
-<section id="爱好" class="level2">
-<h2 class="anchored" data-anchor-id="爱好">☕ 爱好</h2>
-<p>拥有许多三分钟热度</p>
-<ul>
-<li>喜欢写字并写的一手丑字</li>
-<li>爱买钢笔，还不爱用</li>
-<li>健身但是有点懒得出校门</li>
-<li>喜欢睡觉和吃饭</li>
-</ul>
-<p>欢迎浏览我的网站，如果有共同的兴趣，随时交流！</p>
+</div>
+<p><br><br></p>
+<div id="latest-notes" class="column-page">
+<div style="text-align: center; margin-bottom: 30px;">
+<h2 style="display: inline-block; border-bottom: 3px solid #333; padding-bottom: 10px;" class="anchored">
+📝 最新笔记
+</h2>
+</div>
+<div id="listing-my-latest-posts" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="JUU5JTlBJThGJUU3JUFDJTk0JTJDJUU1JUFFJThGJUU4JUE3JTgyJUU3JUJCJThGJUU2JUI1JThFJUU1JUFEJUE2" data-listing-date-sort="1772726400000" data-listing-file-modified-sort="1772798527130" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<a href="./posts/tests/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/tests/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+我的第一篇测试文章：开启建站之旅
+</h5>
+<div class="card-text listing-description delink">
+<strong>角色设定：</strong>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+Mar 6, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+<p><br><br></p>
+<blockquote class="blockquote">
+<p><em>长远来看，我们都将死去。如果在风暴季节，经济学家只能告诉我们，风暴过去后海面会再次平静，那他们给自己设定的任务就太简单、太无用了。</em></p>
+</blockquote>
 
 
-</section>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

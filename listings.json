@@ -4,5 +4,11 @@
     "items": [
       "/posts/tests/index.html"
     ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/tests/index.html"
+    ]
   }
 ]
